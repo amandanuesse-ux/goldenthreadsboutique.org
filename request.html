@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a boutique | Golden Threads Boutique</title>
+<meta name="description" content="Request a Golden Threads traveling boutique at your senior living community, or recommend a community you love.">
+<meta property="og:title" content="Golden Threads Boutique">
+<meta property="og:description" content="A nonprofit traveling clothing boutique that comes to seniors in their own community.">
+<meta property="og:image" content="https://cdn.shopify.com/s/files/1/0770/9697/6551/files/golden-threads-logo-transparent.png?v=1792173247">
+<link rel="icon" href="https://cdn.shopify.com/s/files/1/0770/9697/6551/files/golden-threads-logo-transparent.png?v=1792173247">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="https://cdn.shopify.com/s/files/1/0770/9697/6551/files/golden-threads-logo-transparent.png?v=1792173247" alt="Golden Threads Boutique logo"><span>Golden Threads Boutique<small>Traveling boutique for seniors</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="index.html#how-it-works">How it works</a>
+      <a href="give.html">Give</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="request.html" aria-current="page">Request a boutique</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-head"><div class="wrap">
+    <h1>Request a boutique</h1>
+    <p class="lead">Bring Golden Threads to a senior living community. Staff can request a visit, and families, residents and friends can recommend a community they love. We'll take it from there.</p>
+  </div></div>
+
+  <section style="padding-top:24px">
+    <div class="wrap two">
+      <form class="form" id="request-form" action="https://formsubmit.co/info@goldenthreadsboutique.org" method="POST">
+        <input type="hidden" name="_subject" value="New boutique request from goldenthreadsboutique.org">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://goldenthreadsboutique.org/thanks.html">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <fieldset>
+          <legend>Which describes you?</legend>
+          <div class="choice">
+            <label><input type="radio" name="Request type" value="Staff at the community" required checked><b>I work at a community</b>Request a boutique date for your residents.</label>
+            <label><input type="radio" name="Request type" value="Recommending a community"><b>I'm recommending one</b>For family members, residents, volunteers and friends.</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>About you</legend>
+          <div class="row">
+            <div><label for="name">Your name <span class="req">*</span></label><input id="name" type="text" name="Name" autocomplete="name" required></div>
+            <div><label for="email">Email <span class="req">*</span></label><input id="email" type="email" name="email" autocomplete="email" required></div>
+          </div>
+          <div class="row">
+            <div><label for="phone">Phone</label><input id="phone" type="tel" name="Phone" autocomplete="tel"></div>
+            <div class="path" data-path="staff"><label for="role">Your role</label><input id="role" type="text" name="Role" placeholder="Activities director, executive director…"></div>
+            <div class="path" data-path="refer" hidden><label for="relation">Your connection to the community</label>
+              <select id="relation" name="Connection">
+                <option value="">Choose one</option>
+                <option>My family member lives there</option>
+                <option>I live there</option>
+                <option>I volunteer there</option>
+                <option>Friend or neighbor</option>
+                <option>Other</option>
+              </select></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>About the community</legend>
+          <div class="row">
+            <div><label for="community">Community name <span class="req">*</span></label><input id="community" type="text" name="Community" required></div>
+            <div><label for="city">City <span class="req">*</span></label><input id="city" type="text" name="City" required></div>
+          </div>
+          <div>
+            <label>Type of community</label>
+            <div class="radios">
+              <label><input type="checkbox" name="Community type" value="Assisted living"> Assisted living</label>
+              <label><input type="checkbox" name="Community type" value="Memory care"> Memory care</label>
+              <label><input type="checkbox" name="Community type" value="Skilled nursing"> Skilled nursing</label>
+              <label><input type="checkbox" name="Community type" value="Independent living"> Independent living</label>
+            </div>
+          </div>
+
+          <div class="path" data-path="staff">
+            <div class="row">
+              <div><label for="residents">About how many residents?</label><input id="residents" type="number" name="Residents" min="1" inputmode="numeric"></div>
+              <div><label for="dates">Preferred dates or days <span class="hint">(optional)</span></label><input id="dates" type="text" name="Preferred dates" placeholder="e.g. Saturdays in November"></div>
+            </div>
+          </div>
+
+          <div class="path" data-path="refer" hidden>
+            <div class="row">
+              <div><label for="contact">Who should we contact there? <span class="hint">(if you know)</span></label><input id="contact" type="text" name="Community contact" placeholder="Name and title"></div>
+              <div><label for="contactinfo">Their phone or email <span class="hint">(if you know)</span></label><input id="contactinfo" type="text" name="Community contact info"></div>
+            </div>
+            <div style="margin-top:18px">
+              <label>May we mention your name when we reach out?</label>
+              <div class="radios">
+                <label><input type="radio" name="OK to mention name" value="Yes"> Yes</label>
+                <label><input type="radio" name="OK to mention name" value="No, keep it anonymous"> No, keep it anonymous</label>
+              </div>
+            </div>
+          </div>
+
+          <div><label for="notes">Anything else we should know?</label><textarea id="notes" name="Notes" placeholder="Sizes or needs you've noticed, mobility considerations, best times…"></textarea></div>
+        </fieldset>
+
+        <div><button class="btn" type="submit" id="submit-btn">Send request</button></div>
+      </form>
+
+      <aside>
+        <div class="hero-card">
+          <strong>What happens next</strong>
+          <p>We'll be in touch soon. For a community request, we'll work with your team on a date and send a simple flyer you can share with residents. For a recommendation, we'll reach out to the community and let you know how it goes.</p>
+        </div>
+        <div style="margin-top:28px">
+          <h3>Rather talk it through?</h3>
+          <p>Call <a href="tel:+16363440107">636-344-0107</a> or email <a href="mailto:info@goldenthreadsboutique.org">info@goldenthreadsboutique.org</a>.</p>
+          <p>Boutique visits are free for communities. Our giving program covers shopping credits for residents who need them.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h3>Golden Threads Boutique</h3>
+      <p>A nonprofit traveling clothing boutique for seniors in assisted living, memory care and long-term care.</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="tel:+16363440107">636-344-0107</a></li>
+        <li><a href="mailto:info@goldenthreadsboutique.org">info@goldenthreadsboutique.org</a></li>
+        <li>St. Louis area, Missouri</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="request.html">Request a boutique</a></li>
+        <li><a href="give.html">Give</a></li>
+        <li><a href="https://goldenthreads.us">Shop our resale store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <p class="legal">Golden Threads Boutique is a 501(c)(3) nonprofit organization. Contributions are tax-deductible to the extent allowed by law.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

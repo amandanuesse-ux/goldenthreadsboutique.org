@@ -1,0 +1,100 @@
+<main id="main">
+  <div class="page-head"><div class="wrap">
+    <h1>Request a boutique</h1>
+    <p class="lead">Bring Golden Threads to a senior living community. Staff can request a visit, and families, residents and friends can recommend a community they love. We'll take it from there.</p>
+  </div></div>
+
+  <section style="padding-top:24px">
+    <div class="wrap two">
+      <form class="form" id="request-form" action="https://formsubmit.co/info@goldenthreadsboutique.org" method="POST">
+        <input type="hidden" name="_subject" value="New boutique request from goldenthreadsboutique.org">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://goldenthreadsboutique.org/thanks.html">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <fieldset>
+          <legend>Which describes you?</legend>
+          <div class="choice">
+            <label><input type="radio" name="Request type" value="Staff at the community" required checked><b>I work at a community</b>Request a boutique date for your residents.</label>
+            <label><input type="radio" name="Request type" value="Recommending a community"><b>I'm recommending one</b>For family members, residents, volunteers and friends.</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>About you</legend>
+          <div class="row">
+            <div><label for="name">Your name <span class="req">*</span></label><input id="name" type="text" name="Name" autocomplete="name" required></div>
+            <div><label for="email">Email <span class="req">*</span></label><input id="email" type="email" name="email" autocomplete="email" required></div>
+          </div>
+          <div class="row">
+            <div><label for="phone">Phone</label><input id="phone" type="tel" name="Phone" autocomplete="tel"></div>
+            <div class="path" data-path="staff"><label for="role">Your role</label><input id="role" type="text" name="Role" placeholder="Activities director, executive director…"></div>
+            <div class="path" data-path="refer" hidden><label for="relation">Your connection to the community</label>
+              <select id="relation" name="Connection">
+                <option value="">Choose one</option>
+                <option>My family member lives there</option>
+                <option>I live there</option>
+                <option>I volunteer there</option>
+                <option>Friend or neighbor</option>
+                <option>Other</option>
+              </select></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>About the community</legend>
+          <div class="row">
+            <div><label for="community">Community name <span class="req">*</span></label><input id="community" type="text" name="Community" required></div>
+            <div><label for="city">City <span class="req">*</span></label><input id="city" type="text" name="City" required></div>
+          </div>
+          <div>
+            <label>Type of community</label>
+            <div class="radios">
+              <label><input type="checkbox" name="Community type" value="Assisted living"> Assisted living</label>
+              <label><input type="checkbox" name="Community type" value="Memory care"> Memory care</label>
+              <label><input type="checkbox" name="Community type" value="Skilled nursing"> Skilled nursing</label>
+              <label><input type="checkbox" name="Community type" value="Independent living"> Independent living</label>
+            </div>
+          </div>
+
+          <div class="path" data-path="staff">
+            <div class="row">
+              <div><label for="residents">About how many residents?</label><input id="residents" type="number" name="Residents" min="1" inputmode="numeric"></div>
+              <div><label for="dates">Preferred dates or days <span class="hint">(optional)</span></label><input id="dates" type="text" name="Preferred dates" placeholder="e.g. Saturdays in November"></div>
+            </div>
+          </div>
+
+          <div class="path" data-path="refer" hidden>
+            <div class="row">
+              <div><label for="contact">Who should we contact there? <span class="hint">(if you know)</span></label><input id="contact" type="text" name="Community contact" placeholder="Name and title"></div>
+              <div><label for="contactinfo">Their phone or email <span class="hint">(if you know)</span></label><input id="contactinfo" type="text" name="Community contact info"></div>
+            </div>
+            <div style="margin-top:18px">
+              <label>May we mention your name when we reach out?</label>
+              <div class="radios">
+                <label><input type="radio" name="OK to mention name" value="Yes"> Yes</label>
+                <label><input type="radio" name="OK to mention name" value="No, keep it anonymous"> No, keep it anonymous</label>
+              </div>
+            </div>
+          </div>
+
+          <div><label for="notes">Anything else we should know?</label><textarea id="notes" name="Notes" placeholder="Sizes or needs you've noticed, mobility considerations, best times…"></textarea></div>
+        </fieldset>
+
+        <div><button class="btn" type="submit" id="submit-btn">Send request</button></div>
+      </form>
+
+      <aside>
+        <div class="hero-card">
+          <strong>What happens next</strong>
+          <p>We'll be in touch soon. For a community request, we'll work with your team on a date and send a simple flyer you can share with residents. For a recommendation, we'll reach out to the community and let you know how it goes.</p>
+        </div>
+        <div style="margin-top:28px">
+          <h3>Rather talk it through?</h3>
+          <p>Call <a href="tel:+16363440107">636-344-0107</a> or email <a href="mailto:info@goldenthreadsboutique.org">info@goldenthreadsboutique.org</a>.</p>
+          <p>Boutique visits are free for communities. Our giving program covers shopping credits for residents who need them.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
